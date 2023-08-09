@@ -1,0 +1,118 @@
+@font-face {
+  font-family:"cafe24";
+  font-weight: bold;
+  src: url(Cafe24Supermagic-Bold-v1.0.woff);
+}
+@font-face {
+  font-family: "cafe24";
+  font-weight: normal;
+  src: url(Cafe24Supermagic-Regular-v1.0.woff);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family:'cafe24';
+  font-weight: normal;
+}
+
+#webgame{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  color: rgb(60,60,120);
+  font-size: 3rem;
+  margin: 20px;
+}
+
+button{
+  all: unset;
+
+  font-family: 'cafe24';
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  
+  width: 76px; 
+  height: 38px;
+  padding: 3.5px;
+  background-color: rgb(60,60,120);
+
+  cursor: pointer;
+}
+
+button:hover{
+  transition: 200ms ease-in-out;
+  font-weight: bold;
+  background-color: crimson;
+  transform: scale(1.1);
+}
+
+
+.gamestation{
+  position: relative;
+  top: 28px;
+  width: 315px;
+  height: 315px;
+}
+
+.gamestation>img{
+  width: 315px;
+  height: 315px;
+}
+
+.cover{
+  display: inline-block;
+  position: relative;
+  width: 74px;
+  height: 74px;
+  cursor: pointer;
+}
+
+.coverImg{
+  /*z-index*/
+  position: relative;
+  width: 74px;
+  height: 74px;
+}
+
+.card{
+  position: absolute;
+  top:  0;
+  left: 0;
+}
+
+.cardImg{
+  width: 74px;
+  height: 74px;
+}
+
+#timeover>img{
+  width: 315px;
+  height: 315px;
+}
+
+#timer{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(60,60,120);
+  padding: 3px 5px;
+}
+
+#timer span{
+  display: inline-block;
+}
+
+.left{
+  color: crimson;
+  margin-left: 8px;
+}

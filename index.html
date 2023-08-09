@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <div id="webgame">
+
+      <h1>카드 뒤집기</h1>
+
+      <button id="start">시작</button>
+      <button id="restart" style="display: none;">재시작</button>
+
+      <div id="beforegame" class="gamestation">
+        <img src="./img/LoL_cover.jpeg">
+      </div>
+
+      <div id="game" class="gamestation" style="display: none;" >
+      <div id="carddeck">
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card1"></div>
+        </div>
+
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card2"></div>
+        </div>
+
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card3"></div>
+        </div>
+
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card4"></div>
+        </div>
+
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card5"></div>
+        </div>
+
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card6"></div>
+        </div>
+        
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+            <div class="card"><img class="cardImg" src="" id="card7"></div>
+        </div>
+
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card8"></div>
+        </div>
+
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card9"></div>
+        </div>
+
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card10"></div>
+        </div>
+
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card11"></div>
+        </div>
+
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card12"></div>
+        </div>
+
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card13"></div>
+        </div>
+
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card14"></div>
+        </div>
+          
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card15"></div>
+        </div>
+
+        <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
+          <div class="card"><img class="cardImg" src="" id="card16"></div>
+        </div>
+      </div><!--carddeck-->
+        
+        <div id="timeover" style="display: none;">
+          <img src="./img/end.png">
+        </div>
+
+        <div id="timer">
+          <span>남은 시간: <span class="left" id="lefttime"></span></span>
+          <span>남은 카드: <span class="left" id="leftcard"></span></span>
+        </div>
+      </div>
+
+      <div id="finishedcover" class="gamestation" style="display: none;">
+        <img src="" alt="">
+      </div>
+
+    </div>
+  </body>
+</html>
