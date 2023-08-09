@@ -51,6 +51,8 @@ function gameStart(event){
     timeover.style.display = "none";
     carddeck.style.display = "";
 
+    finishedcover.style.display = "none";
+
     for(const cover of covers){
       cover.style.zIndex = 1;
     }
@@ -64,7 +66,7 @@ function turnIntoGame(){
   //1초마다 시간체크
   let t = 0;
   const updatetime = () =>{
-    lefttime.innerHTML = `${25-t}초`;
+    lefttime.innerHTML = `${50-t}초`;
     t++;
   }
   updatetime();
@@ -79,7 +81,7 @@ function turnIntoGame(){
     timeover.style.display = "";
     carddeck.style.display = "none";
   }
-  const timeOut = setTimeout(timeout, 25000);
+  const timeOut = setTimeout(timeout, 50000);
 
   //중간에 재시작 버튼 누르면 다시 초기화
   restartbutton.addEventListener('click',function(){
@@ -92,7 +94,6 @@ function turnIntoGame(){
   shakingCard();
 
   carddeck.addEventListener('click', fliptheCard);
-
   
 }
 
@@ -112,6 +113,15 @@ function fliptheCard(event){
       }
     }
     deleteBasket(basket);
+  }
+
+  //뒤집다가 ... 게임 성공!
+  if(matched === 8){
+    setTimeout(finishGame, 300);
+    function finishGame(){
+      finishedcover.style.display = "";
+      game.style.display = "none";
+    }
   }
   
 }
