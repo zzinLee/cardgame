@@ -1,3 +1,4 @@
+
 @font-face {
   font-family:"cafe24";
   font-weight: bold;
@@ -9,10 +10,14 @@
   src: url(Cafe24Supermagic-Regular-v1.0.woff);
 }
 
+html{
+  font-size: 18px;
+}
+
+
 body{
   margin: 0;
   padding: 0;
-  font-size: 20px;
   font-family:'cafe24';
   font-weight: normal;
 }
@@ -44,6 +49,8 @@ button{
   height: 38px;
   padding: 3.5px;
   background-color: rgb(60,60,120);
+  box-shadow: rgb(99, 99, 149) 2px 2px 6px;
+  border-radius: 12px;
 
   cursor: pointer;
 }
