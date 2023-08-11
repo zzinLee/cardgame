@@ -1,6 +1,3 @@
-@media (max-width: 768px){
-  .webgame { display: inherit; }
-}
 
 @font-face {
   font-family:"cafe24";
@@ -14,7 +11,7 @@
 }
 
 html{
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
@@ -30,14 +27,14 @@ body{
   height: 100vh;
   display: flex;
   flex-direction: column;
-  
   align-items: center;
 }
 
 h1{
   color: rgb(60,60,120);
   font-size: 3rem;
-  margin: 20px;
+  margin-top: 1.4rem;
+  margin-bottom: 0;
 }
 
 button{
@@ -49,14 +46,15 @@ button{
   color: white;
   text-align: center;
   
-  width: 76px; 
-  height: 38px;
-  padding: 3.5px;
+  width: 3.5rem; 
+  height: 2.0rem;
+  padding: 3px;
   background-color: rgb(60,60,120);
   box-shadow: rgb(99, 99, 149) 2px 2px 6px;
-  border-radius: 12px;
+  border-radius: 0.6rem;
 
   cursor: pointer;
+  margin: 1rem 0 1.5rem;
 }
 
 button:hover{
@@ -68,47 +66,53 @@ button:hover{
 
 
 .gamestation{
-  position: relative;
-  top: 28px;
-  width: 315px;
-  height: 315px;
+  width: 415px;
+  height: 415px;
 }
 
 .gamestation>img{
-  width: 315px;
-  height: 315px;
+  width: 100%;
+  height: 100%;
+}
+
+#carddeck{
+  width: 100%;
+  height: 100%;
 }
 
 .cover{
   display: inline-block;
   position: relative;
-  width: 74px;
-  height: 74px;
+  width: 23.5%;
+  height: 23.5%;
   cursor: pointer;
 }
 
 .coverImg{
   /*z-index*/
   position: relative;
-  width: 74px;
-  height: 74px;
+  width: 100%;
+  height: 100%;
 }
 
 .card{
   position: absolute;
+  width: 100%;
+  height:100%;
   top:  0;
   left: 0;
 }
 
 .cardImg{
-  width: 74px;
-  height: 74px;
+  width: 100%;
+  height: 100%;
 }
 
-#timeover>img{
-  width: 315px;
-  height: 315px;
+#timeover, #timeover > img{
+  width: 100%;
+  height: 100%;
 }
+
 
 #timer{
   position: relative;
@@ -116,7 +120,8 @@ button:hover{
   flex-direction: row;
   justify-content: space-between;
   color: rgb(60,60,120);
-  padding: 3px 5px;
+  font-size: 1.1rem;
+  padding: 5px 5px;
 }
 
 #timer span{
@@ -128,3 +133,9 @@ button:hover{
   margin-left: 8px;
 }
 
+@media (max-width: 768px){
+  .gamestation{
+    width: 360px;
+    height: 360px;
+  }
+}
