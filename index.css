@@ -1,3 +1,6 @@
+@media (max-width: 768px){
+  .webgame { display: inherit; }
+}
 
 @font-face {
   font-family:"cafe24";
@@ -27,6 +30,7 @@ body{
   height: 100vh;
   display: flex;
   flex-direction: column;
+  
   align-items: center;
 }
 
@@ -123,3 +127,4 @@ button:hover{
   color: crimson;
   margin-left: 8px;
 }
+
