@@ -10,7 +10,7 @@
   src: url(Cafe24Supermagic-Regular-v1.0.woff);
 }
 
-html{
+:root{
   font-size: 20px;
 }
 
@@ -133,13 +133,6 @@ button:hover{
   margin-left: 8px;
 }
 
-@media (max-width: 768px){
-  .gamestation{
-    width: 360px;
-    height: 360px;
-  }
-}
-
 footer{
   position: absolute;
   bottom: 0;
@@ -148,4 +141,11 @@ footer{
   text-align: center;
   width: 100%;
   padding-bottom: 5px;
+}
+
+@media (max-width: 768px){
+  .gamestation{
+    width: 360px;
+    height: 360px;
+  }
 }

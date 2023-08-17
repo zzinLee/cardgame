@@ -7,19 +7,23 @@
   </head>
 
   <body>
-    
+    <!--flexbox direction column으로 세로방향 배열-->
     <section id="webgame">
 
       <h1>카드 뒤집기</h1>
 
+      <!--start 를 보여주고 restart는 숨긴상태로 시작-->
       <button id="start">시작</button>
       <button id="restart" style="display: none;">재시작</button>
 
+      <!-- 게임 전 화면 (시작버튼과 여기를 보여준다)-->
       <div id="beforegame" class="gamestation">
-        <img src="./img/LoL_cover.jpeg">
+        <img src="./img/LoL_cover.jpeg" alt="게임전이미지">
       </div>
 
-      <div id="game" class="gamestation" style="display: none;" >
+      <!-- 시작을 누르면 재시작 버튼이 생기고 이 화면을 보여줌-->
+      <div id="game" class="gamestation" style="display: none;">
+      <!-- 게임중 화면 -->
       <div id="carddeck">
         <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
           <div class="card"><img class="cardImg" src="" id="card1"></div>
@@ -84,20 +88,21 @@
         <div class="cover"><img class="coverImg" src="./img/lol.png" style="z-index:1;">
           <div class="card"><img class="cardImg" src="" id="card16"></div>
         </div>
-      </div><!--carddeck-->
-        
-        <div id="timeover" style="display: none;">
-          <img src="./img/end.png">
-        </div>
-
-        <div id="timer">
-          <span>남은 시간: <span class="left" id="lefttime"></span></span>
-          <span>남은 카드: <span class="left" id="leftcard"></span></span>
-        </div>
+      </div><!--#carddeck-->
+      <!-- 시간 초과시 이 화면으로 변경한다-->
+      <div id="timeover" style="display: none;">
+        <img src="./img/end.png">
       </div>
 
+      <div id="timer">
+        <span>남은 시간: <span class="left" id="lefttime"></span></span>
+        <span>남은 카드: <span class="left" id="leftcard"></span></span>
+      </div>
+      </div><!--#game-->
+
+      <!--게임이 성공적으로 종료되면 이 화면으로-->
       <div id="finishedcover" class="gamestation" style="display: none;">
-        <img src="./img/poroending.png">
+        <img src="./img/poroending.png" alt="게임성공화면">
       </div>
     </section>
 
